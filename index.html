@@ -10,21 +10,24 @@
     <title>X SiGI - FÓRUM ECONÔMICO MUNDIAL</title>
 </head>
 <body>
+    <div class="menu">
+        <ul id="portnav"></ul>
+    </div>
     <header>
         <img src="image\World_Economic_Forum_logo.png" alt="">
     </header>
     <nav class="rellax" data-rellax-speed="-6">
-        <div class="space">
+        <div>
             <ul>
-                <li>Home</li>
-                <li><a href="" >Agenda</a></li>
-                <li><a href="" >Documentos</a></li>
-                <li><a href="" >Blog</a></li>
+                <li>Home<span class="active-container"></span></li>
+                <li class="link-container"><a href="" onclick="alert('WIP: Ainda não desenvolvemos essa área. Volte mais tarde!')">Agenda<span class="sp"></span></a></li>
+                <li class="link-container"><a href="" onclick="alert('WIP: Ainda não desenvolvemos essa área. Volte mais tarde!')">Documentos<span class="sp"></span></a></li>
+                <li class="link-container"><a href="" onclick="alert('WIP: Ainda não desenvolvemos essa área. Volte mais tarde!')">Blog<span class="sp"></span></a></li>
             </ul>
         </div> <!-- Conteúdos -->
         <div>
             <ul>
-                <li style="transform: translateY(1em);"><a href="https://twitter.com/hashtag/WEF23">#WEF23</a></li>
+                <li><a href="https://twitter.com/hashtag/WEF23">#WEF23</a></li>
                 <li><a href=""><img src="image/facebook-logo.png" alt="Facebook"></a></li>
                 <li><a href=""><img src="image/Instagram_logo.png" alt="Instagram"></a></li>
                 <li><a href=""><img src="image/twitter-logo.png" alt="Twitter"></a></li>
@@ -37,16 +40,24 @@
             <h1>Encontro Anual do Fórum Econômico Mundial</h1>
             <p>Preparem suas agendas para o encontro que vai acontecer em janeiro em Davos.</p>
             <div class="rellax" data-rellax-speed="-10"><img src="image/world_crisis_two.avif" alt="" id="mudarcor"></div>
-            <div class="shadow"></div>
+            <div class="shadow">
+                <div><a href="#oqsigi" id="mv"><img src="image/down-arrow.png" alt=""></a></div>
+            </div>
         </section>
         <section class="SIGI">
-            <h2 class="slide-left">O que é a SIGI?</h2>
-            <p class="slide-left">A Simulação Geopolítica do Ifes – SiGI é um projeto de extensão institucionalizado desenvolvido pelo Instituto Federal de Ciência e Tecnologia do Espírito Santo e organizado pelos campi Vitória, Serra e Cachoeiro. O projeto consiste em simular um ambiente de diplomacia internacional nos moldes das Nações Unidas, cujo principal objetivo é levar aos participantes do evento – que se dirige aos alunos do 9º ano do Ensino Fundamental ao Ensino Médio – o conhecimento sobre temas e problemáticas procedentes da conjuntura geopolítica nacional e internacional, de modo a incentivá-los a desenvolver pedagogicamente o processo de discussão e resolução dessas problemáticas. <a href="https://sigi.ifes.edu.br/vii/">Saiba mais.</a></p>
+            <h2 class="slide-left" id="oqsigi">O que é a SIGI?</h2>
+            <p class="slide-left">A Simulação Geopolítica do Ifes(SiGI) é um projeto de extensão institucionalizado desenvolvido pelo Instituto Federal de Ciência e Tecnologia do Espírito Santo e organizado pelos campi Vitória, Serra e Cachoeiro. O projeto consiste em simular um ambiente de diplomacia internacional nos moldes das Nações Unidas, cujo principal objetivo é levar aos participantes do evento - que se dirige aos alunos do 9º ano do Ensino Fundamental ao Ensino Médio - o conhecimento sobre temas e problemáticas procedentes da conjuntura geopolítica nacional e internacional, de modo a incentivá-los a desenvolver pedagogicamente o processo de discussão e resolução dessas problemáticas. <a href="https://sigi.ifes.edu.br/vii/">Saiba mais.</a></p>
             <img src="image/sigi-logo.png" alt="" class="slide-right">
         </section>
     </div>
 
-    <footer></footer> <!-- EXTRAS -->
+    <footer>
+        <ul>
+            <li><a href=""><img src="image/facebook-logo.png" alt="Facebook"></a></li>
+            <li><a href=""><img src="image/Instagram_logo.png" alt="Instagram"></a></li>
+            <li><a href=""><img src="image/twitter-logo.png" alt="Twitter"></a></li>
+        </ul>
+    </footer> <!-- EXTRAS -->
     <script src="code.js"></script>
 </body>
 </html>
