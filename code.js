@@ -4,6 +4,12 @@ window.addEventListener("scroll", function() {
     // Pega a posição vertical do scroll
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     
+    //
+    var sectionSigi = document.querySelector('.SIGI');
+    var sigiTop = sectionSigi.offsetTop;
+    var sigiHeight = sectionSigi.offsetHeight;
+    var windowHeight = window.innerHeight;
+
     // Define a quantidade de cinza a ser aplicada na imagem
     var grayScale = Math.min(scrollTop / 250, 1);
     
@@ -15,5 +21,18 @@ window.addEventListener("scroll", function() {
         document.getElementById("mudarcor").classList.add("grayscale");
     } else {
         document.getElementById("mudarcor").classList.remove("grayscale");
+    }
+
+    //
+    if (scrollTop > sigiTop - windowHeight && scrollTop < sigiTop + sigiHeight) {
+        var children = sectionSigi.querySelectorAll('*'); // seleciona todos os elementos filhos
+        children.forEach(function(child) {
+          child.classList.add('animate');
+        });
+      } else {
+        var children = sectionSigi.querySelectorAll('*');
+        children.forEach(function(child) {
+          child.classList.remove('animate');
+        });
     }
 });
