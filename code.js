@@ -61,6 +61,9 @@ window.addEventListener("scroll", function() {
     var sectionSigi = document.querySelector('.SIGI');
     var sigiTop = sectionSigi.offsetTop;
     var sigiHeight = sectionSigi.offsetHeight;
+    var sectionConvocados = document.querySelector('.convocacao');
+    var convocacaoTop = sectionConvocados.offsetTop;
+    var convocacaoHeight = sectionConvocados.offsetHeight;
     var windowHeight = window.innerHeight;
 
     // Define a quantidade de cinza a ser aplicada na imagem
@@ -87,6 +90,19 @@ window.addEventListener("scroll", function() {
         children.forEach(function(child) {
           child.classList.remove('animate');
         });
+    }
+
+    //  
+    if (scrollTop > convocacaoTop - windowHeight && scrollTop < convocacaoTop + convocacaoHeight) {
+      var children = sectionConvocados.querySelectorAll('*'); // seleciona todos os elementos filhos
+      children.forEach(function(child) {
+        child.classList.add('animate');
+      });
+    } else {
+      var children = sectionConvocados.querySelectorAll('*');
+      children.forEach(function(child) {
+        child.classList.remove('animate');
+      });
     }
 });
 
